@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/LayoutPadrao">
+	
+<head>
+	<title>AlgaWorks</title>
+</head>
+
+<body>
+<section layout:fragment="conteudo">
+
+	<div class="page-header">
+		<div class="container-fluid">
+			<h1>
+				Cadastro de produto
+			</h1>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+	
+		<div class="alert  alert-danger  alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<i class="fa  fa-exclamation-circle"></i> Já existe um produto com o nome informado.
+		</div>
+	
+		<form method="get" class="form-vertical  js-form-loading">
+			
+			<div class="form-group">
+				<label for="input-produto-nome">Nome</label>
+				<input id="input-produto-nome" type="text" class="form-control"/>
+			</div>
+	
+			<div class="form-group">
+				<label for="input-produto-descricao">Descrição</label>
+				<textarea id="input-produto-descricao" rows="3" class="form-control"></textarea>
+			</div>
+	
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="input-produto-preco">Preço unitário</label>
+						<input id="input-produto-preco" type="text" class="form-control" placeholder="R$"/>
+					</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="input-produto-estoque">Estoque</label>
+						<input id="input-produto-estoque" type="text" class="form-control" placeholder="Unidades"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<button class="btn  btn-primary" type="submit">Salvar</button>
+				<a href="#" class="btn  btn-default">Cancelar</a>
+				<a href="#" class="btn  btn-link  aw-btn-link-danger">Excluir este produto</a>
+			</div>
+	
+		</form>
+	</div>
+
+</section>
+</body>
+</html>
