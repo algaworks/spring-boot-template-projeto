@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.algaworks</groupId>
-	<artifactId>atacama</artifactId>
+	<artifactId>spring-boot-template-projeto</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>exemplo-spring-boot-layout-atacama</name>
+	<name>spring-boot-template-projeto</name>
 	<description>Exemplo de projeto Spring Boot com o Layout Atacama da AlgaWorks</description>
 
 	<parent>
